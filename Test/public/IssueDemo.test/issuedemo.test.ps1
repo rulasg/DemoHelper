@@ -1,4 +1,4 @@
-function Test_addIssuedemo {
+function Test_Issuedemo_Cicle {
 
     Assert-SkipTest
 
@@ -9,7 +9,7 @@ function Test_addIssuedemo {
     $result = Get-IssueDemo -RepoWithOwner $repoDestination
     Assert-Count -Expected 0 -Presented $result
 
-    
+
     $issues = Get-IssueDemo -RepoWithOwner $repoSource -Verbose
     Assert-Count -Expected 8 -Presented $issues
 
