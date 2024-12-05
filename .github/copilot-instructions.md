@@ -14,7 +14,7 @@ function Get-UserName{
     param()
 
     #Logic of the function
-} Export-ModuleFunction -FunctionName 'Get-UserName'
+} Export-ModuleMember -Function 'Get-UserName'
 ```
 
 ### PowerShell Test Instructions
